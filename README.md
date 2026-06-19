@@ -17,6 +17,9 @@ Currently building at the intersection of traditional SRE and AI/ML infrastructu
 
 ## 📌 Featured Projects
 
+### [verses-rag](https://github.com/assimilatereality/RAG)
+A retrieval-augmented generation pipeline over the KJV Bible and a theological article corpus. Combines dense semantic search (BGE-large-en-v1.5) and BM25 sparse retrieval with RRF fusion in Qdrant, cross-encoder reranking, and a LangGraph state machine that grades retrieved documents, reformulates failed queries, and verifies generated answers for faithfulness before returning them. Local generation via Ollama; OpenAI and Anthropic handle judgment-critical roles. Includes a FastAPI backend with SSE streaming, a Streamlit UI, and a full evaluation harness.
+
 ### [qdrant-quantization-benchmark](https://github.com/assimilatereality/qdrant-quantization-benchmark)
 Benchmarking suite for evaluating vector quantization methods in Qdrant — measuring latency, accuracy retention, and memory tradeoffs across scalar, binary, and product quantization. Built for SRE/DevOps engineers right-sizing AI infrastructure and optimizing RAG pipelines.
 
