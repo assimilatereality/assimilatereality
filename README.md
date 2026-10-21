@@ -1,33 +1,45 @@
-# Rodney Tigges — Senior SRE | AI-Enhanced Operations
+# Rodney Tigges — Senior Site Reliability Engineer
+**Observability · Predictive Analytics · AI/ML Infrastructure**
 
-AI-forward Site Reliability Engineer with 20+ years of infrastructure experience. I specialize in evolving reactive monitoring into intelligent, self-healing systems — and in understanding *why* systems fail, not just how to fix them.
+20+ years in SRE, infrastructure, and large-scale healthcare systems. I move monitoring from reactive to anticipatory, and I'm applying that discipline to the reliability of AI/LLM systems. I care about *why* systems fail, not just how to fix them.
 
-Currently building at the intersection of traditional SRE and AI/ML infrastructure.
+🟢 **Open to fully remote (US) roles:** Senior/Staff SRE · AI Platform / MLOps · reliability-focused Forward Deployed Engineering
+
+## 📈 Track Record
+- **99.99% uptime** across 130+ applications and 1.5M accounts (IBM Security Access Manager migration)
+- **300+ monthly S.M.A.R.T. recommendations** from a generative-AI workflow at America's largest hospital system
+- **Multi-tier synthetic monitoring strategy** now standard across that system
+- **35% fewer incidents** via a predictive-analytics remediation platform; **60% faster deployments** via Ansible automation
 
 ---
 
 ## 🔧 What I Work On
-
-- **Observability** — Dynatrace, AppDynamics, Splunk; SLIs, SLOs, error budgets, Golden Signals
-- **AI-Enhanced Operations** — LangChain, LangGraph, RAG architectures, MCP, AI agent design
-- **Infrastructure** — AWS, Kubernetes, Ansible, Terraform, CI/CD
-- **Languages** — Python (PyTorch, FastAI), R, SQL
+- **Reliability & Observability** — SLIs/SLOs, error budgets, incident response, Golden Signals; Dynatrace, AppDynamics, Splunk, open-source stacks
+- **AI/ML Infrastructure** — RAG (hybrid retrieval, reranking), LangChain/LangGraph agents, Qdrant, Ollama, MCP, LLM evaluation & observability, quantization/right-sizing
+- **Platforms & Automation** — AWS, Kubernetes, Docker, Ansible, Terraform
+- **Languages** — Python (PyTorch primary), PostgreSQL; past R, C++, Ruby
+- **Workflow** — daily AI-assisted development (Cursor, Claude Code)
 
 ---
 
 ## 📌 Featured Projects
 
 ### [verses-rag](https://github.com/assimilatereality/RAG)
-A retrieval-augmented generation pipeline over the KJV Bible and a theological article corpus. Combines dense semantic search (BGE-large-en-v1.5) and BM25 sparse retrieval with RRF fusion in Qdrant, cross-encoder reranking, and a LangGraph state machine that grades retrieved documents, reformulates failed queries, and verifies generated answers for faithfulness before returning them. Local generation via Ollama; OpenAI and Anthropic handle judgment-critical roles. Includes a FastAPI backend with SSE streaming, a Streamlit UI, and a full evaluation harness.
+**A RAG pipeline that checks its own work before answering.**
+Hybrid retrieval over the KJV Bible and a theological article corpus: dense (BGE-large-en-v1.5) + BM25 with RRF fusion in Qdrant, then cross-encoder reranking. A LangGraph state machine grades retrieved documents, reformulates failed queries, and verifies answer faithfulness before returning. FastAPI/SSE backend, Streamlit UI, full evaluation harness. Local generation via Ollama; OpenAI/Anthropic for judgment-critical steps.
+*Stack:* Python · LangGraph · Qdrant · Ollama · FastAPI · Streamlit
+*Why it matters for SRE:* retrieval quality gates, faithfulness checks, and evaluation as guardrails for LLM systems in production.
 
 ### [qdrant-quantization-benchmark](https://github.com/assimilatereality/qdrant-quantization-benchmark)
-Benchmarking suite for evaluating vector quantization methods in Qdrant — measuring latency, accuracy retention, and memory tradeoffs across scalar, binary, and product quantization. Built for SRE/DevOps engineers right-sizing AI infrastructure and optimizing RAG pipelines.
+**Right-sizing vector search: what quantization really costs.**
+Benchmarks scalar, binary, and product quantization in Qdrant for latency, accuracy retention, and memory. Written for SRE/DevOps engineers sizing AI infrastructure.
+*Stack:* Python · Qdrantcross scalar, binary, and product quantization. Built for SRE/DevOps engineers right-sizing AI infrastructure and optimizing RAG pipelines.
 
 ---
 
 ## ✍️ Writing
 
-I publish at **[assimilatereality.github.io](https://assimilatereality.github.io)** — systems thinking, resilience engineering, and AI-enhanced operations. Topics include the Cynefin framework, antifragility, cognitive bias in incident response, and the evolving role of ML in operational practice.
+Systems thinking, resilience engineering, and AI in operations at [assimilatereality.github.io](https://assimilatereality.github.io/).
 
 Recent posts:
 - [We've Been Here Before: AI, Calculators, and the Shifting Floor of "Real" Skills](https://assimilatereality.github.io/ai/software%20development/2026/03/05/shifting-floor-of-skills.html)
