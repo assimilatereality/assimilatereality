@@ -27,13 +27,17 @@
 ### [rag](https://github.com/assimilatereality/RAG)
 **A RAG pipeline that checks its own work before answering.**
 Hybrid retrieval over the KJV Bible and a theological article corpus: dense (BGE-large-en-v1.5) + BM25 with RRF fusion in Qdrant, then cross-encoder reranking. A LangGraph state machine grades retrieved documents, reformulates failed queries, and verifies answer faithfulness before returning. FastAPI/SSE backend, Streamlit UI, full evaluation harness. Local generation via Ollama; OpenAI/Anthropic for judgment-critical steps.
+
 *Stack:* Python · LangGraph · Qdrant · Ollama · FastAPI · Streamlit
+
 *Why it matters for SRE:* retrieval quality gates, faithfulness checks, and evaluation as guardrails for LLM systems in production.
 
 ### [qdrant-quantization-benchmark](https://github.com/assimilatereality/qdrant-quantization-benchmark)
 **Right-sizing vector search: what quantization really costs.**
 Benchmarks scalar, binary, and product quantization in Qdrant for latency, accuracy retention, and memory. Written for SRE/DevOps engineers sizing AI infrastructure.
-*Stack:* Python · Qdrantcross scalar, binary, and product quantization. Built for SRE/DevOps engineers right-sizing AI infrastructure and optimizing RAG pipelines.
+
+*Stack:* Python · Qdrantcross scalar, binary, and product quantization. 
+Built for SRE/DevOps engineers right-sizing AI infrastructure and optimizing RAG pipelines.
 
 ---
 
