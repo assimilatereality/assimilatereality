@@ -24,7 +24,7 @@
 
 ## 📌 Featured Projects
 
-### [verses-rag](https://github.com/assimilatereality/RAG)
+### [rag](https://github.com/assimilatereality/RAG)
 **A RAG pipeline that checks its own work before answering.**
 Hybrid retrieval over the KJV Bible and a theological article corpus: dense (BGE-large-en-v1.5) + BM25 with RRF fusion in Qdrant, then cross-encoder reranking. A LangGraph state machine grades retrieved documents, reformulates failed queries, and verifies answer faithfulness before returning. FastAPI/SSE backend, Streamlit UI, full evaluation harness. Local generation via Ollama; OpenAI/Anthropic for judgment-critical steps.
 *Stack:* Python · LangGraph · Qdrant · Ollama · FastAPI · Streamlit
