@@ -37,7 +37,6 @@ Hybrid retrieval over the KJV Bible and a theological article corpus: dense (BGE
 Benchmarks scalar, binary, and product quantization in Qdrant for latency, accuracy retention, and memory. Written for SRE/DevOps engineers sizing AI infrastructure.
 
 *Stack:* Python · Qdrantcross scalar, binary, and product quantization. 
-Built for SRE/DevOps engineers right-sizing AI infrastructure and optimizing RAG pipelines.
 
 ---
 
